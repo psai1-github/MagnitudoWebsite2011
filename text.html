@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="myDiv">
+  <h2 id="h"></h2>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<button onclick="save()">Save</button>
+<p></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<textarea id="demo" spellcheck="true"></textarea>
+<script>
+function colorred() {
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("h").style.color = "red";
+}
+var font='Arial';
+
+function colorblue() {
+  document.getElementById("demo").style.color = "blue";
+  document.getElementById("h").style.color = "blue";
+}
+
+
+
+function colorgreen() {
+  document.getElementById("demo").style.color = "green";
+  document.getElementById("h").style.color = "green";
+}
+
+
+
+
+function size10() {
+  document.getElementById("demo").style.fontSize = "10px";
+  document.getElementById("h").style.fontSize="10px";
+}
+
+
+
+function bcolorblue(){
+  document.getElementById("demo").style.backgroundColor="blue";
+  document.getElementById("h").style.backgroundColor="blue";
+}
+
+
+
+
+function size15() {
+  document.getElementById("demo").style.fontSize = "15px";
+  document.getElementById("h").style.fontSize="15px";
+}
+
+
+
+
+function size20() {
+  document.getElementById("demo").style.fontSize = "20px";
+  document.getElementById("h").style.fontSize = "20px";
+}
+
+
+
+
+
+
+
+
+function bcolorred() {
+  document.getElementById("demo").style.backgroundColor = "red";
+  document.getElementById("h").style.backgroundColor="red";
+}
+
+
+
+
+
+
+function bcolorgreen() {
+  document.getElementById("demo").style.backgroundColor = "green";
+  document.getElementById("h").style.backgroundColor="green";
+}
+
+
+function a() {
+  document.getElementById("demo").style.fontFamily = "Arial";
+  document.getElementById("h").style.fontFamily="Arial";
+}
+
+
+
+function i() {
+  document.getElementById("demo").style.fontFamily = "Impact,Charcoal,sans-serif";
+  document.getElementById("h").style.fontFamily="Impact,Charcoal,sans-serif";
+}
+
+
+function v() {
+  document.getElementById("demo").style.fontFamily = "verdana,sans-serif";
+  document.getElementByid("h").style.fontFamily="verdana,sans-serif";
+}
+
+
+function p(){
+  document.getElementById("demo").style.fontFamily="Roboto";
+  document.getElementById("h").style.fontFamily="Roboto";
+}
+
+
+
+function l(){
+  document.getElementById("demo").style.fontFamily="lobster";
+}
+
+
+function bw(){
+  document.getElementById("demo").style.backgroundColor="white";
+  document.getElementById("h").style.backgroundColor="white";
+}
+function w(){
+  document.getElementById("demo").style.color="black";
+}
+function save(){
+  var x=document.getElementById("demo").value;
+  document.getElementById("h").innerHTML=x;
+}
+
+</script>
+
+<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  bottom: 50px;
+  z-index: 1;
+}
+
+.dropup-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropup-content a:hover {background-color: #ccc}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+.dropup:hover .dropbtn {
+  background-color: #2980B9;
+}
+</style>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<div class="dropup">
+  <button class="dropbtn">Color</button>
+  <div class="dropup-content">
+    <a href="#" onclick="colorred()">Red</a>
+    <a href="#" onclick="colorblue()">Blue</a>
+    <a href="#"onclick="colorgreen()">Green</a>
+    <a href="#"onclick="w">Black</a>
+  </div>
+</div>
+
+<div class="dropup">
+  <button class="dropbtn">Back Ground Color</button>
+  <div class="dropup-content">
+    <a href="#" onclick="bcolorred()">Red</a>
+    <a href="#" onclick="bcolorblue()">Blue</a>
+    <a href="#"onclick="bcolorgreen()">Green</a>
+    <a href="#"onclick="bw()">White</a>
+  </div>
+</div>
+
+
+<div class="dropup">
+  <button class="dropbtn">Size</button>
+  <div class="dropup-content">
+    <a href="#" onclick="size10()">10</a>
+    <a href="#" onclick="size15()">15</a>
+    <a href="#"onclick="size20()">20</a>
+  </div>
+</div>
+
+
+
+<div class="dropup">
+  <button class="dropbtn">Font</button>
+  <div class="dropup-content">
+    <a href="#" onclick="a()">Arial</a>
+    <a href="#" onclick="v()">Verdana</a>
+    <a href="#"onclick="i()">Impact</a>
+    <a href="#"onclick="p()">Roboto</a>
+    <a href="#"onclick="l()">Lobster</a>
+  </div>
+</div>
+
+</body>
+</html>
