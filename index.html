@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.alert.success {background-color: #4CAF50;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
+</head>
+<body>
+
+
+<div class="alert">
+  <span class="closebtn">&times;</span>
+  <strong>Discount! 50% on all coding classes & You can save up to 15% on all products : ex; 14.99P = 14P !</strong>
+</div>
+
+<div class="alert success">
+  <span class="closebtn">&times;</span>
+  <strong>Event!Attend our free Code-Athon on (Date) the top winners earn 50+ points!</strong>
+</div>
+
+<div class="alert info">
+  <span class="closebtn">&times;</span>
+  <strong>Info!When your free 100 points run out you can get more by clicking on the 3 line button and pressing Buy points!</strong>
+</div>
+
+<div class="alert warning">
+  <span class="closebtn">&times;</span>
+  <strong>Warning!Time is running out get our exclusive deals before they are gone!</strong>
+</div>
+
+<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="sign_in_form.py">Sign up</a>
+  <a href="buying_points.py">Buy points</a>
+  <a href="#">Free Lesoons</a>
+  <a href="mailto:pranavS31899@gmail.com?">Contact</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ All</button>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+	<title>
+		Magnitudo
+	</title>
+
+	<!-- linking the stylesheet(CSS) -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+
+<body>
+
+<style>
+ul {
+  list-style-type:none;
+}
+  #searchbar{
+     margin-left: 15%;
+     padding:15px;
+     border-radius: 10px;
+   }
+   input[type=text] {
+      width: 30%;
+      -webkit-transition: width 0.15s ease-in-out;
+      transition: width 0.15s ease-in-out;
+   }
+
+   /* When the input field gets focus,
+        change its width to 100% */
+   input[type=text]:focus {
+     width: 70%;
+   }
+
+  #list{
+    font-size:  1.5em;
+    margin-left: 90px;
+   }
+
+.animals{
+   display: list-item;
+  }
+</style>
+<!-- Webpage-->
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a target="_blank"href="search.html" ><b>Search</b></a>
+  <a target='_blank'href="websites.html"><b>Websites</b></a>
+  <a target="_blank" href="tutor.html"><b>Teaching</b></a>
+  <a target='_blank' href="games.html">Games</a>
+  <div class="topnav-right">
+    <a href="#search"></a>
+    <a href="#about">About</a>
+  </div>
+</div>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href=""><small>Clothing</small></a>
+  <a href="" ><small>Books</small></a>
+  <a href=""><small>Tech</small></a>
+  <a href=""><small>Tutoring</small></a>
+  <a href=""><small>School-Supplies</small></a>
+  <a href="" ><small>Best-Sellers</small></a>
+  <a href=""><small>Sports</small></a>
+  <a href=""><small>Toys</small></a>
+  <a target="_blank"href="deals.html" ><small>Deals & Events</small></a>
+  <a target='-_blank' href='text.html'><small>Text Editor</small></a>
+  <a href='mailto:pranavS31899@gmail.com?subject=Create'><small>Create</small></a>
+  <a target="_blank" href="coding.html"><small>Code</small></a>
+  <a target='-_blank'href="reviews.py"><small>Reviews</small></a>
+  <a target="_blank" href="https://www.google.com/"><small>Exit</small></a>
+
+</div>
+</body>
+<!-- ecommers prototype -->
+	<!-- input tag -->
+	<input id="searchbar" onkeyup="search_animal()" type="text"
+		name="search" placeholder="Search">
+
+	<!-- ordered list -->
+	<ul id='list'>
+		<li class="animals"><a><img src=""></a></li>
+		<li class="animals"></li>
+		<li class="animals"></li>
+		<li class="animals"></li>
+		<li class="animals"></li>
+		<li class="animals"></li>
+		<li class="animals"></li>
+		<li class="animals"></li>
+		<li class="animals"></li>
+		<li class="animals"></li>
+		<li class="animals"></li>
+
+	<!-- linking javscript -->
+	<script src="./animals.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+
+
+
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://ctl.s6img.com/society6/img/LyShljLiFmRoqGcEOoh2mymmn1w/w_1500/posters/top/~artwork,fw_2718,fh_3620,fx_-106,fy_-88,iw_3780,ih_3780/s6-original-art-uploads/society6/uploads/misc/372afb6fce834554ae5503019e0c0141/~~/lined-paper1951239-posters.jpg" alt="Paper" style="width:100%">
+      <div class="container">
+        <h2><del>19.99$ </del> <br/>9.99$</h2>
+        <p class="title">500 sheets , Id=1</p>
+        <a target='_blank' href='#'><p><button class="button">Buy</button></p></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://kbimages1-a.akamaihd.net/6ea81875-5ef9-4594-801a-a93d650a84b2/1200/1200/False/diary-of-a-wimpy-kid-the-deep-end-book-15-1.jpg" alt="The deep end book" style="width:65%">
+      <div class="container">
+        <h2>14.99$</h2>
+        <p class="title">The Deep End , ID`=2</p>
+        <p>This book is in great condition.I hope you enjoy this 217 page book!</p>
+        <a target="_blank"href="reviews.py"><button class="button">Reviews</button></a>
+        <a target="_blank" href='#'><p><button class="button">Buy</button></p></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Full begginer Python course" style="width:50%">
+      <div class="container">
+        <h2><del>200P<del></h2>
+          <h2>100P, Id=3</h2>
+        <p class="title">Full begginer course!</p>
+        <a target='_blank' href='buying.py'><p><button class="button">Buy</button></p></a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+</body>
+
+</html>
