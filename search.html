@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./style.css">
+<!-- Webpage-->
+
+<style>
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="search.html" ><b>Search</b></a>
+  <a href="websites.html"><b>Websites</b></a>
+  <a target="_blank" href="https://amasing.trinket.io/sites/magnitudo-kids"><b>Teaching</b></a>
+  <div class="topnav-right">
+    <a href="#search"></a>
+    <a href="#about">About</a>
+  </div>
+</div>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href=""><small>Clothing</small></a>
+  <a href="" ><small>Books</small></a>
+  <a href=""><small>Tech</small></a>
+  <a href=""><small>Tutoring</small></a>
+  <a href=""><small>School-Supplies</small></a>
+  <a href="" ><small>Best-Sellers</small></a>
+  <a href=""><small>Sports</small></a>
+  <a href=""><small>Toys</small></a>
+  <a href="" ><small>Deals</small></a>
+  <a href=""><small>Create</small></a>
+  <a href=""><small>Discounts</small></a>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+ol{list-style: none;}
+#searchbar{
+	margin-left: 15%;
+	padding:15px;
+	border-radius: 10px;
+}
+
+input[type=text] {
+	width: 30%;
+	-webkit-transition: width 0.15s ease-in-out;
+	transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus,
+		change its width to 100% */
+input[type=text]:focus {
+	width: 70%;
+}
+
+#list{
+	font-size: 1.5em;
+	margin-left: 90px;
+}
+
+.animals{
+display: list-item;
+}
+
+</style>
+<script>
+// JavaScript code
+function search_animal() {
+	let input = document.getElementById('searchbar').value
+	input=input.toLowerCase();
+	let x = document.getElementsByClassName('animals');
+
+	for (i = 0; i < x.length; i++) {
+		if (!x[i].innerHTML.toLowerCase().includes(input)) {
+			x[i].style.display="none";
+		}
+		else {
+			x[i].style.display="list-item";
+		}
+	}
+}
+
+
+</script>
+	<!-- linking the stylesheet(CSS) -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+
+	<!-- input tag -->
+	<input id="searchbar" onkeyup="search_animal()" type="text"
+		name="search" placeholder="Search animals..">
+
+	<!-- ordered list -->
+	<ol id='list'>
+		<a target="-_blank" href="https://amasing.trinket.io/sites/pranav-news"><li class="animals">Pranav News</li>
+		<a target="_blank"href="Meditor.py"><li class="animals">Python text Editor</li>
+		<li class="animals"></li>
+		<li class="animals"></li>
+		<li class="animals"></li>
+		<li class="animals"></li>
+		<li class="animals"></li>
+		<li class="animals"></li>
+		<li class="animals"></li>
+		<li class="animals"></li>
+		<li class="animals"></li>
+	</ol>
+
+	<!-- linking javscript -->
+	<script src="./animals.js"></script>
+</body>
+
+</html>
